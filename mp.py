@@ -11,6 +11,7 @@ party = re.compile("party")
 
 with open("mps_details.csv", 'w+') as mp_details:
 	for x in range(len(names)):
+		#todo - make the writing of the csv more elegant
 		mp_details.write('"')
 		mp_details.write(names[x].find("h2").string.encode('utf-8'))
 		mp_details.write('"')
